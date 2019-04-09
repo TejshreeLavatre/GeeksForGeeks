@@ -29,15 +29,15 @@ from collections import defaultdict
 
 
 def palindrome(S):
-    oddCount = 0
+    odd_count = 0
     d = defaultdict(int)     # Creates a dictionary with alphabets as key and num of occurrence as value
     for i in S:
         d[i] += 1
         if d[i] % 2 == 1:
-            oddCount += 1
+            odd_count += 1
         else:
-            oddCount -= 1
-    return oddCount <= 1
+            odd_count -= 1
+    return odd_count <= 1
 
 
 for _ in range(int(input())):
