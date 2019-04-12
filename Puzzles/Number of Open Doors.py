@@ -36,3 +36,9 @@ Output
 908
 252
 """
+
+
+import math
+for _ in range(int(input())):
+    N = int(input())
+    print(int(math.sqrt(N)))
