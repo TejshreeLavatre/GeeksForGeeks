@@ -21,3 +21,6 @@ Output:
 skgee
 rof
 """
+
+for _ in range(int(input())):
+    print(*sorted(list(input()), reverse=True), sep="")
