@@ -30,5 +30,17 @@ Explanation:
 Testcase 1: After segregating the 0s, 1s and 2s, we have 0 0 1 2 2 which shown in the output.
 """
 
+from collections import Counter
 for _ in range(int(input())):
     n = int(input())
+    arr = list(map(int, input().split()))
+    zero, one, two = 0, 0, 0
+    for num in arr:
+        if num == 0:
+            zero += 1
+        elif num == 1:
+            one += 1
+        elif num == 2:
+            two += 1
+    print(int("0"*zero, "1"*one, "2"*two))
+
