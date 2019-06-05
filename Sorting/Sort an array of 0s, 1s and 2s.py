@@ -34,9 +34,7 @@ Testcase 1: After segregating the 0s, 1s and 2s, we have 0 0 1 2 2 which shown i
 for _ in range(int(input())):
     n = int(input())
     arr = list(map(int, input().strip().split()))
-    print(arr)
     arr.sort()
-    print(arr)
     for i in range(len(arr)):
         print(arr[i], end=" ")
     print("\r")
