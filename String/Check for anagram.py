@@ -13,7 +13,7 @@ Print "YES" without quotes if the two strings are anagram else print "NO".
 
 Constraints:
 1 ≤ T ≤ 30
-1 ≤ |s| ≤ 1016
+1 ≤ |s| ≤ 10^16
 
 Example:
 Input:
